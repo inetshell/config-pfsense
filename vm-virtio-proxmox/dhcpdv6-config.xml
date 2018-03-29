@@ -1,0 +1,12 @@
+
+<dhcpdv6>
+	<lan>
+		<enable></enable>
+		<range>
+			<from>::1000</from>
+			<to>::2000</to>
+		</range>
+		<ramode>assist</ramode>
+		<rapriority>medium</rapriority>
+	</lan>
+</dhcpdv6>

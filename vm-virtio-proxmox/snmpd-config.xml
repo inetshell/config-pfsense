@@ -1,0 +1,6 @@
+
+<snmpd>
+	<syslocation></syslocation>
+	<syscontact></syscontact>
+	<rocommunity>public</rocommunity>
+</snmpd>

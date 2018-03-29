@@ -1,0 +1,31 @@
+
+<interfaces>
+	<wan>
+		<enable></enable>
+		<if>vtnet0</if>
+		<mtu></mtu>
+		<ipaddr>dhcp</ipaddr>
+		<ipaddrv6>dhcp6</ipaddrv6>
+		<subnet></subnet>
+		<gateway></gateway>
+		<blockpriv></blockpriv>
+		<blockbogons></blockbogons>
+		<dhcphostname></dhcphostname>
+		<media></media>
+		<mediaopt></mediaopt>
+		<dhcp6-duid></dhcp6-duid>
+		<dhcp6-ia-pd-len>0</dhcp6-ia-pd-len>
+	</wan>
+	<lan>
+		<enable></enable>
+		<if>vtnet1</if>
+		<ipaddr>192.168.1.1</ipaddr>
+		<subnet>24</subnet>
+		<ipaddrv6>track6</ipaddrv6>
+		<subnetv6>64</subnetv6>
+		<media></media>
+		<mediaopt></mediaopt>
+		<track6-interface>wan</track6-interface>
+		<track6-prefix-id>0</track6-prefix-id>
+	</lan>
+</interfaces>

@@ -1,0 +1,52 @@
+
+<system>
+	<optimization>normal</optimization>
+	<hostname>pfSense</hostname>
+	<domain>localdomain</domain>
+	<dnsserver></dnsserver>
+	<dnsallowoverride></dnsallowoverride>
+	<group>
+		<name>all</name>
+		<description><![CDATA[All Users]]></description>
+		<scope>system</scope>
+		<gid>1998</gid>
+		<member>0</member>
+	</group>
+	<group>
+		<name>admins</name>
+		<description><![CDATA[System Administrators]]></description>
+		<scope>system</scope>
+		<gid>1999</gid>
+		<member>0</member>
+		<priv>page-all</priv>
+	</group>
+	<user>
+		<name>admin</name>
+		<descr><![CDATA[System Administrator]]></descr>
+		<scope>system</scope>
+		<groupname>admins</groupname>
+		<bcrypt-hash>$2b$10$13u6qwCOwODv34GyCMgdWub6oQF3RX0rG7c3d3X4JvzuEmAXLYDd2</bcrypt-hash>
+		<uid>0</uid>
+		<priv>user-shell-access</priv>
+	</user>
+	<nextuid>2000</nextuid>
+	<nextgid>2000</nextgid>
+	<timeservers>0.pfsense.pool.ntp.org</timeservers>
+	<webgui>
+		<protocol>https</protocol>
+		<loginautocomplete></loginautocomplete>
+		<ssl-certref>5abd0f40a3be9</ssl-certref>
+	</webgui>
+	<disablenatreflection>yes</disablenatreflection>
+	<disablesegmentationoffloading></disablesegmentationoffloading>
+	<disablelargereceiveoffloading></disablelargereceiveoffloading>
+	<ipv6allow></ipv6allow>
+	<powerd_ac_mode>hadp</powerd_ac_mode>
+	<powerd_battery_mode>hadp</powerd_battery_mode>
+	<powerd_normal_mode>hadp</powerd_normal_mode>
+	<bogons>
+		<interval>monthly</interval>
+	</bogons>
+	<already_run_config_upgrade></already_run_config_upgrade>
+	<crypto_hardware>cryptodev</crypto_hardware>
+</system>

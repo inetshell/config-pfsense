@@ -1,0 +1,10 @@
+
+<dhcpd>
+	<lan>
+		<enable></enable>
+		<range>
+			<from>192.168.1.100</from>
+			<to>192.168.1.199</to>
+		</range>
+	</lan>
+</dhcpd>
