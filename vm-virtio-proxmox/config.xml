@@ -59,6 +59,7 @@
 		<dnsserver>8.8.4.4</dnsserver>
 		<dns1gw>none</dns1gw>
 		<dns2gw>none</dns2gw>
+		<disablechecksumoffloading></disablechecksumoffloading>
 	</system>
 	<interfaces>
 		<wan>
@@ -117,9 +118,7 @@
 		<rocommunity>public</rocommunity>
 	</snmpd>
 	<diag>
-		<ipv6nat>
-			<ipaddr></ipaddr>
-		</ipv6nat>
+		<ipv6nat></ipv6nat>
 	</diag>
 	<syslog>
 		<filterdescriptions>1</filterdescriptions>
@@ -300,8 +299,8 @@
 	</unbound>
 	<dyndnses></dyndnses>
 	<revision>
-		<time>1522342219</time>
-		<description><![CDATA[admin@192.168.1.100: System:  hostname: &quot;pfSense&quot; -&gt; &quot;fw01&quot; domain: &quot;localdomain&quot; -&gt; &quot;domain.local&quot; timezone: &quot;&quot; -&gt; &quot;Etc/UTC&quot;]]></description>
+		<time>1522356294</time>
+		<description><![CDATA[admin@192.168.1.100: /system_advanced_network.php made unknown change]]></description>
 		<username>admin@192.168.1.100</username>
 	</revision>
 	<cert>

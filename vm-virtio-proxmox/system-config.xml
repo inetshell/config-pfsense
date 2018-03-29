@@ -56,4 +56,5 @@
 	<dnsserver>8.8.4.4</dnsserver>
 	<dns1gw>none</dns1gw>
 	<dns2gw>none</dns2gw>
+	<disablechecksumoffloading></disablechecksumoffloading>
 </system>
