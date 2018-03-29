@@ -40,6 +40,8 @@
 			<dashboardcolumns>2</dashboardcolumns>
 			<webguicss>pfSense.css</webguicss>
 			<logincss>1e3f75;</logincss>
+			<port></port>
+			<max_procs>2</max_procs>
 		</webgui>
 		<disablenatreflection>yes</disablenatreflection>
 		<disablesegmentationoffloading></disablesegmentationoffloading>
@@ -60,6 +62,14 @@
 		<dns1gw>none</dns1gw>
 		<dns2gw>none</dns2gw>
 		<disablechecksumoffloading></disablechecksumoffloading>
+		<ssh>
+			<sshdkeyonly>enabled</sshdkeyonly>
+			<port>22</port>
+		</ssh>
+		<serialspeed>115200</serialspeed>
+		<primaryconsole>serial</primaryconsole>
+		<enablesshd>enabled</enablesshd>
+		<sshdkeyonly></sshdkeyonly>
 	</system>
 	<interfaces>
 		<wan>
@@ -299,8 +309,8 @@
 	</unbound>
 	<dyndnses></dyndnses>
 	<revision>
-		<time>1522356294</time>
-		<description><![CDATA[admin@192.168.1.100: /system_advanced_network.php made unknown change]]></description>
+		<time>1522356703</time>
+		<description><![CDATA[admin@192.168.1.100: /system_advanced_admin.php made unknown change]]></description>
 		<username>admin@192.168.1.100</username>
 	</revision>
 	<cert>
