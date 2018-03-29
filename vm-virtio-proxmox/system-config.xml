@@ -1,10 +1,8 @@
 
 <system>
 	<optimization>normal</optimization>
-	<hostname>pfSense</hostname>
-	<domain>localdomain</domain>
-	<dnsserver></dnsserver>
-	<dnsallowoverride></dnsallowoverride>
+	<hostname>fw01</hostname>
+	<domain>domain.local</domain>
 	<group>
 		<name>all</name>
 		<description><![CDATA[All Users]]></description>
@@ -36,6 +34,9 @@
 		<protocol>https</protocol>
 		<loginautocomplete></loginautocomplete>
 		<ssl-certref>5abd0f40a3be9</ssl-certref>
+		<dashboardcolumns>2</dashboardcolumns>
+		<webguicss>pfSense.css</webguicss>
+		<logincss>1e3f75;</logincss>
 	</webgui>
 	<disablenatreflection>yes</disablenatreflection>
 	<disablesegmentationoffloading></disablesegmentationoffloading>
@@ -49,4 +50,10 @@
 	</bogons>
 	<already_run_config_upgrade></already_run_config_upgrade>
 	<crypto_hardware>cryptodev</crypto_hardware>
+	<language>en_US</language>
+	<timezone>Etc/UTC</timezone>
+	<dnsserver>8.8.8.8</dnsserver>
+	<dnsserver>8.8.4.4</dnsserver>
+	<dns1gw>none</dns1gw>
+	<dns2gw>none</dns2gw>
 </system>

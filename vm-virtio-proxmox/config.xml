@@ -4,10 +4,8 @@
 	<lastchange></lastchange>
 	<system>
 		<optimization>normal</optimization>
-		<hostname>pfSense</hostname>
-		<domain>localdomain</domain>
-		<dnsserver></dnsserver>
-		<dnsallowoverride></dnsallowoverride>
+		<hostname>fw01</hostname>
+		<domain>domain.local</domain>
 		<group>
 			<name>all</name>
 			<description><![CDATA[All Users]]></description>
@@ -39,6 +37,9 @@
 			<protocol>https</protocol>
 			<loginautocomplete></loginautocomplete>
 			<ssl-certref>5abd0f40a3be9</ssl-certref>
+			<dashboardcolumns>2</dashboardcolumns>
+			<webguicss>pfSense.css</webguicss>
+			<logincss>1e3f75;</logincss>
 		</webgui>
 		<disablenatreflection>yes</disablenatreflection>
 		<disablesegmentationoffloading></disablesegmentationoffloading>
@@ -52,6 +53,12 @@
 		</bogons>
 		<already_run_config_upgrade></already_run_config_upgrade>
 		<crypto_hardware>cryptodev</crypto_hardware>
+		<language>en_US</language>
+		<timezone>Etc/UTC</timezone>
+		<dnsserver>8.8.8.8</dnsserver>
+		<dnsserver>8.8.4.4</dnsserver>
+		<dns1gw>none</dns1gw>
+		<dns2gw>none</dns2gw>
 	</system>
 	<interfaces>
 		<wan>
@@ -150,8 +157,7 @@
 			</destination>
 		</rule>
 	</filter>
-	<shaper>
-	</shaper>
+	<shaper></shaper>
 	<ipsec></ipsec>
 	<aliases></aliases>
 	<proxyarp></proxyarp>
@@ -281,8 +287,7 @@
 		<period>10</period>
 	</widgets>
 	<openvpn></openvpn>
-	<dnshaper>
-	</dnshaper>
+	<dnshaper></dnshaper>
 	<unbound>
 		<enable></enable>
 		<dnssec></dnssec>
@@ -295,9 +300,9 @@
 	</unbound>
 	<dyndnses></dyndnses>
 	<revision>
-		<time>1522339648</time>
-		<description><![CDATA[(system): Generated new self-signed HTTPS certificate (5abd0f40a3be9)]]></description>
-		<username>(system)</username>
+		<time>1522342219</time>
+		<description><![CDATA[admin@192.168.1.100: System:  hostname: &quot;pfSense&quot; -&gt; &quot;fw01&quot; domain: &quot;localdomain&quot; -&gt; &quot;domain.local&quot; timezone: &quot;&quot; -&gt; &quot;Etc/UTC&quot;]]></description>
+		<username>admin@192.168.1.100</username>
 	</revision>
 	<cert>
 		<refid>5abd0f40a3be9</refid>
