@@ -211,8 +211,7 @@
 			</destination>
 		</rule>
 	</filter>
-	<shaper>
-	</shaper>
+	<shaper></shaper>
 	<ipsec></ipsec>
 	<aliases></aliases>
 	<proxyarp></proxyarp>
@@ -358,9 +357,9 @@
 	</unbound>
 	<dyndnses></dyndnses>
 	<revision>
-		<time>1522379982</time>
-		<description><![CDATA[admin@192.168.1.100: /services_dhcp.php made unknown change]]></description>
-		<username>admin@192.168.1.100</username>
+		<time>1522380487</time>
+		<description><![CDATA[(system): Installed iperf package.]]></description>
+		<username>(system)</username>
 	</revision>
 	<cert>
 		<refid>5abd0f40a3be9</refid>
@@ -381,4 +380,43 @@
 			<defaultgw></defaultgw>
 		</gateway_item>
 	</gateways>
+	<installedpackages>
+		<package>
+			<name>iperf</name>
+			<website>http://www.freshports.org/benchmarks/iperf/</website>
+			<descr><![CDATA[Iperf is a tool for testing network throughput, loss, and jitter.]]></descr>
+			<version>2.0.5.5_3</version>
+			<pkginfolink>https://doc.pfsense.org/index.php/Iperf_package</pkginfolink>
+			<configurationfile>iperf.xml</configurationfile>
+			<tabs>
+				<tab>
+					<text><![CDATA[Client]]></text>
+					<url>/pkg_edit.php?xml=iperf.xml</url>
+					<active></active>
+				</tab>
+				<tab>
+					<text><![CDATA[Server]]></text>
+					<url>/pkg_edit.php?xml=iperfserver.xml</url>
+				</tab>
+			</tabs>
+		</package>
+		<menu>
+			<name>iperf Client</name>
+			<tooltiptext>Run iperf in client mode.</tooltiptext>
+			<section>Diagnostics</section>
+			<url>/pkg_edit.php?xml=iperf.xml</url>
+		</menu>
+		<menu>
+			<name>iperf Server</name>
+			<tooltiptext>Run iperf in server mode.</tooltiptext>
+			<section>Diagnostics</section>
+			<url>/pkg_edit.php?xml=iperfserver.xml</url>
+		</menu>
+		<service>
+			<name>iperf</name>
+			<executable>iperf</executable>
+			<description><![CDATA[iperf Network Performance Testing Daemon/Client]]></description>
+			<stopcmd>mwexec(&quot;/usr/bin/killall iperf&quot;);</stopcmd>
+		</service>
+	</installedpackages>
 </pfsense>
