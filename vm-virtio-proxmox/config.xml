@@ -56,9 +56,7 @@
 		<already_run_config_upgrade></already_run_config_upgrade>
 		<crypto_hardware>cryptodev</crypto_hardware>
 		<language>en_US</language>
-		<timezone>Etc/UTC</timezone>
-		<dnsserver>8.8.8.8</dnsserver>
-		<dnsserver>8.8.4.4</dnsserver>
+		<timezone>America/Mexico_City</timezone>
 		<dns1gw>none</dns1gw>
 		<dns2gw>none</dns2gw>
 		<disablechecksumoffloading></disablechecksumoffloading>
@@ -77,6 +75,8 @@
 		<maximumtableentries></maximumtableentries>
 		<maximumfrags></maximumfrags>
 		<reflectiontimeout></reflectiontimeout>
+		<dnsserver>8.8.8.8</dnsserver>
+		<dnsserver>8.8.4.4</dnsserver>
 	</system>
 	<interfaces>
 		<wan>
@@ -316,8 +316,8 @@
 	</unbound>
 	<dyndnses></dyndnses>
 	<revision>
-		<time>1522373949</time>
-		<description><![CDATA[admin@192.168.1.100: Changed Advanced Firewall/NAT settings.]]></description>
+		<time>1522374465</time>
+		<description><![CDATA[admin@192.168.1.100: System:  timezone: &quot;Etc/UTC&quot; -&gt; &quot;America/Mexico_City&quot;]]></description>
 		<username>admin@192.168.1.100</username>
 	</revision>
 	<cert>
