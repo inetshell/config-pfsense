@@ -321,17 +321,20 @@
 	<unbound>
 		<enable></enable>
 		<dnssec></dnssec>
-		<active_interface></active_interface>
-		<outgoing_interface></outgoing_interface>
+		<active_interface>all</active_interface>
+		<outgoing_interface>all</outgoing_interface>
 		<custom_options></custom_options>
 		<hideidentity></hideidentity>
 		<hideversion></hideversion>
 		<dnssecstripped></dnssecstripped>
+		<port></port>
+		<forwarding></forwarding>
+		<system_domain_local_zone_type>transparent</system_domain_local_zone_type>
 	</unbound>
 	<dyndnses></dyndnses>
 	<revision>
-		<time>1522378333</time>
-		<description><![CDATA[admin@192.168.1.100: Changed system logging options.]]></description>
+		<time>1522379048</time>
+		<description><![CDATA[admin@192.168.1.100: DNS Resolver configured.]]></description>
 		<username>admin@192.168.1.100</username>
 	</revision>
 	<cert>
