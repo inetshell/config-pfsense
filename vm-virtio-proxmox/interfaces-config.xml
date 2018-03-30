@@ -3,18 +3,12 @@
 	<wan>
 		<enable></enable>
 		<if>vtnet0</if>
-		<mtu></mtu>
-		<ipaddr>dhcp</ipaddr>
-		<ipaddrv6>dhcp6</ipaddrv6>
-		<subnet></subnet>
-		<gateway></gateway>
-		<blockpriv></blockpriv>
 		<blockbogons></blockbogons>
-		<dhcphostname></dhcphostname>
-		<media></media>
-		<mediaopt></mediaopt>
-		<dhcp6-duid></dhcp6-duid>
-		<dhcp6-ia-pd-len>0</dhcp6-ia-pd-len>
+		<descr><![CDATA[WAN1]]></descr>
+		<ipaddr>10.0.2.15</ipaddr>
+		<subnet>24</subnet>
+		<gateway>WAN1_GW</gateway>
+		<spoofmac></spoofmac>
 	</wan>
 	<lan>
 		<enable></enable>
