@@ -114,13 +114,32 @@
 	</dhcpd>
 	<dhcpdv6>
 		<lan>
-			<enable></enable>
 			<range>
 				<from>::1000</from>
 				<to>::2000</to>
 			</range>
 			<ramode>assist</ramode>
 			<rapriority>medium</rapriority>
+			<prefixrange>
+				<from></from>
+				<to></to>
+				<prefixlength>48</prefixlength>
+			</prefixrange>
+			<defaultleasetime></defaultleasetime>
+			<maxleasetime></maxleasetime>
+			<netmask></netmask>
+			<domain></domain>
+			<domainsearchlist></domainsearchlist>
+			<ddnsdomain></ddnsdomain>
+			<ddnsdomainprimary></ddnsdomainprimary>
+			<ddnsdomainkeyname></ddnsdomainkeyname>
+			<ddnsdomainkey></ddnsdomainkey>
+			<ddnsclientupdates>allow</ddnsclientupdates>
+			<tftp></tftp>
+			<ldap></ldap>
+			<bootfile_url></bootfile_url>
+			<dhcpv6leaseinlocaltime></dhcpv6leaseinlocaltime>
+			<numberoptions></numberoptions>
 		</lan>
 	</dhcpdv6>
 	<snmpd>
@@ -310,8 +329,8 @@
 	</unbound>
 	<dyndnses></dyndnses>
 	<revision>
-		<time>1522375109</time>
-		<description><![CDATA[admin@192.168.1.100: /interfaces.php made unknown change]]></description>
+		<time>1522375859</time>
+		<description><![CDATA[admin@192.168.1.100: /services_dhcpv6.php made unknown change]]></description>
 		<username>admin@192.168.1.100</username>
 	</revision>
 	<cert>
