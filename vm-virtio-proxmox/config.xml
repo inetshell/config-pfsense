@@ -11,7 +11,6 @@
 			<description><![CDATA[All Users]]></description>
 			<scope>system</scope>
 			<gid>1998</gid>
-			<member>0</member>
 		</group>
 		<group>
 			<name>admins</name>
@@ -26,9 +25,14 @@
 			<descr><![CDATA[System Administrator]]></descr>
 			<scope>system</scope>
 			<groupname>admins</groupname>
-			<bcrypt-hash>$2b$10$13u6qwCOwODv34GyCMgdWub6oQF3RX0rG7c3d3X4JvzuEmAXLYDd2</bcrypt-hash>
+			<bcrypt-hash>$2b$10$RnHZLak2YSto80xL3HfIWOhxI/wXNZiGb33kXhVxv.MZ53tP0b0c6</bcrypt-hash>
 			<uid>0</uid>
 			<priv>user-shell-access</priv>
+			<expires></expires>
+			<dashboardcolumns>2</dashboardcolumns>
+			<authorizedkeys>c3NoLWVkMjU1MTkgQUFBQUMzTnphQzFsWkRJMU5URTVBQUFBSUg0RXpGSDk2SnBKQUM1RG45UVdnZFlDOTJlU01aa0NHQmFHaXptZHZtdGYgcGZzZW5zZSBhZG1pbg==</authorizedkeys>
+			<ipsecpsk></ipsecpsk>
+			<webguicss>pfSense.css</webguicss>
 		</user>
 		<nextuid>2000</nextuid>
 		<nextgid>2000</nextgid>
@@ -357,9 +361,9 @@
 	</unbound>
 	<dyndnses></dyndnses>
 	<revision>
-		<time>1522380978</time>
-		<description><![CDATA[(system): Installed nmap package.]]></description>
-		<username>(system)</username>
+		<time>1522381833</time>
+		<description><![CDATA[admin@192.168.1.200: /system_usermanager.php made unknown change]]></description>
+		<username>admin@192.168.1.200</username>
 	</revision>
 	<cert>
 		<refid>5abd0f40a3be9</refid>
