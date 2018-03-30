@@ -357,8 +357,8 @@
 	</unbound>
 	<dyndnses></dyndnses>
 	<revision>
-		<time>1522380487</time>
-		<description><![CDATA[(system): Installed iperf package.]]></description>
+		<time>1522380978</time>
+		<description><![CDATA[(system): Installed nmap package.]]></description>
 		<username>(system)</username>
 	</revision>
 	<cert>
@@ -400,6 +400,16 @@
 				</tab>
 			</tabs>
 		</package>
+		<package>
+			<name>nmap</name>
+			<descr><![CDATA[NMap is a utility for network exploration or security auditing.&lt;br/&gt;
+			It supports ping scanning (determine which hosts are up), many port scanning techniques (determine what services the hosts are offering), version detection (determine what application/service is running on a port), and TCP/IP fingerprinting (remote host OS or device identification).
+			It also offers flexible target and port specification, decoy/stealth scanning, SunRPC scanning, and more.]]></descr>
+			<version>1.4.4_1</version>
+			<pkginfolink>https://doc.pfsense.org/index.php/Nmap_package</pkginfolink>
+			<configurationfile>nmap.xml</configurationfile>
+			<include_file>/usr/local/pkg/nmap.inc</include_file>
+		</package>
 		<menu>
 			<name>iperf Client</name>
 			<tooltiptext>Run iperf in client mode.</tooltiptext>
@@ -411,6 +421,11 @@
 			<tooltiptext>Run iperf in server mode.</tooltiptext>
 			<section>Diagnostics</section>
 			<url>/pkg_edit.php?xml=iperfserver.xml</url>
+		</menu>
+		<menu>
+			<name>NMap</name>
+			<section>Diagnostics</section>
+			<configfile>nmap.xml</configfile>
 		</menu>
 		<service>
 			<name>iperf</name>
