@@ -67,4 +67,5 @@
 	<primaryconsole>serial</primaryconsole>
 	<enablesshd>enabled</enablesshd>
 	<sshdkeyonly></sshdkeyonly>
+	<disableconsolemenu></disableconsolemenu>
 </system>
