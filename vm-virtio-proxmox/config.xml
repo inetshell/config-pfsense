@@ -103,9 +103,33 @@
 		<lan>
 			<enable></enable>
 			<range>
-				<from>192.168.1.100</from>
-				<to>192.168.1.199</to>
+				<from>192.168.1.200</from>
+				<to>192.168.1.230</to>
 			</range>
+			<failover_peerip></failover_peerip>
+			<dhcpleaseinlocaltime>yes</dhcpleaseinlocaltime>
+			<defaultleasetime>604800</defaultleasetime>
+			<maxleasetime>1296000</maxleasetime>
+			<netmask></netmask>
+			<gateway>192.168.1.251</gateway>
+			<domain>domain.local</domain>
+			<domainsearchlist></domainsearchlist>
+			<ddnsdomain></ddnsdomain>
+			<ddnsdomainprimary></ddnsdomainprimary>
+			<ddnsdomainkeyname></ddnsdomainkeyname>
+			<ddnsdomainkey></ddnsdomainkey>
+			<mac_allow></mac_allow>
+			<mac_deny></mac_deny>
+			<tftp></tftp>
+			<ldap></ldap>
+			<nextserver></nextserver>
+			<filename></filename>
+			<filename32></filename32>
+			<filename64></filename64>
+			<rootpath></rootpath>
+			<numberoptions></numberoptions>
+			<dnsserver>192.168.1.251</dnsserver>
+			<statsgraph>yes</statsgraph>
 		</lan>
 	</dhcpd>
 	<dhcpdv6>
@@ -187,7 +211,8 @@
 			</destination>
 		</rule>
 	</filter>
-	<shaper></shaper>
+	<shaper>
+	</shaper>
 	<ipsec></ipsec>
 	<aliases></aliases>
 	<proxyarp></proxyarp>
@@ -333,8 +358,8 @@
 	</unbound>
 	<dyndnses></dyndnses>
 	<revision>
-		<time>1522379048</time>
-		<description><![CDATA[admin@192.168.1.100: DNS Resolver configured.]]></description>
+		<time>1522379982</time>
+		<description><![CDATA[admin@192.168.1.100: /services_dhcp.php made unknown change]]></description>
 		<username>admin@192.168.1.100</username>
 	</revision>
 	<cert>
