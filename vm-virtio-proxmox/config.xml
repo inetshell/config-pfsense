@@ -71,6 +71,12 @@
 		<enablesshd>enabled</enablesshd>
 		<sshdkeyonly></sshdkeyonly>
 		<disableconsolemenu></disableconsolemenu>
+		<scrubrnid>enabled</scrubrnid>
+		<maximumstates></maximumstates>
+		<aliasesresolveinterval></aliasesresolveinterval>
+		<maximumtableentries></maximumtableentries>
+		<maximumfrags></maximumfrags>
+		<reflectiontimeout></reflectiontimeout>
 	</system>
 	<interfaces>
 		<wan>
@@ -310,8 +316,8 @@
 	</unbound>
 	<dyndnses></dyndnses>
 	<revision>
-		<time>1522373407</time>
-		<description><![CDATA[admin@192.168.1.100: /system_advanced_admin.php made unknown change]]></description>
+		<time>1522373949</time>
+		<description><![CDATA[admin@192.168.1.100: Changed Advanced Firewall/NAT settings.]]></description>
 		<username>admin@192.168.1.100</username>
 	</revision>
 	<cert>

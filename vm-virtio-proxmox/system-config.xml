@@ -68,4 +68,10 @@
 	<enablesshd>enabled</enablesshd>
 	<sshdkeyonly></sshdkeyonly>
 	<disableconsolemenu></disableconsolemenu>
+	<scrubrnid>enabled</scrubrnid>
+	<maximumstates></maximumstates>
+	<aliasesresolveinterval></aliasesresolveinterval>
+	<maximumtableentries></maximumtableentries>
+	<maximumfrags></maximumfrags>
+	<reflectiontimeout></reflectiontimeout>
 </system>
