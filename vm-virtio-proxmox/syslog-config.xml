@@ -1,4 +1,9 @@
 
 <syslog>
 	<filterdescriptions>1</filterdescriptions>
+	<nentries>200</nentries>
+	<logfilesize>33554432</logfilesize>
+	<sourceip></sourceip>
+	<ipproto>ipv4</ipproto>
+	<nologdefaultblock></nologdefaultblock>
 </syslog>
